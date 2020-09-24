@@ -37,13 +37,13 @@ console.time('nums')
 selectionSort(nums)
 console.timeEnd('nums')
 console.log(nums)
-
 */
-
 
 let nomes = require('./dados/100-mil-nomes')
 console.time('Teste nomes')
 selectionSort(nomes)
 console.timeEnd('Teste nomes')
+// Medindo a memória utilizada pelo programa
+let memoria = process.memoryUsage().heapUsed / 1024 / 1024
 console.log(nomes)
-
+console.log('Memória utilizada (MB):', memoria)
